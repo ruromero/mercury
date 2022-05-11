@@ -125,7 +125,7 @@ public abstract class AbstractTest {
             sd.setSpec(new ServiceDomainSpecBuilder()
                     .withBusinessImage("testImage")
                     .withServiceDomainInfra(SERVICE_DOMAIN_INFRA_NAME)
-                    .withType(ServiceDomainSpec.Type.CustomerOffer)
+                    .withType(com.redhat.mercury.model.ServiceDomain.CUSTOMER_OFFER)
                     .withExpose(new ExposeSpecBuilder().withHttp(new HttpExposeTypeBuilder()
                                                                 .withApiVersion("v1")
                                                                 .build())
@@ -135,7 +135,7 @@ public abstract class AbstractTest {
             sd.setSpec(new ServiceDomainSpecBuilder()
                     .withBusinessImage("testImage")
                     .withServiceDomainInfra(SERVICE_DOMAIN_INFRA_NAME)
-                    .withType(ServiceDomainSpec.Type.CustomerOffer)
+                    .withType(com.redhat.mercury.model.ServiceDomain.CUSTOMER_OFFER)
                     .build());
         }
         return sd;

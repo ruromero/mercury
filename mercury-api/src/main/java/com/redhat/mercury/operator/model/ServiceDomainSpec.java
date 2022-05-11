@@ -23,14 +23,9 @@ import static com.redhat.mercury.operator.model.MercuryConstants.K8S_BUILDER_PAC
 @Accessors(chain = true)
 @Buildable(editableEnabled = false, lazyCollectionInitEnabled = false, builderPackage = K8S_BUILDER_PACKAGE)
 public class ServiceDomainSpec implements Serializable {
-    public enum Type {
-        CustomerOffer(),
-        CustomerCreditRating(),
-        PartyRoutingProfile()
-    }
 
     private String businessImage;
     private String serviceDomainInfra;
-    private Type type;
+    private com.redhat.mercury.model.ServiceDomain type;
     private ExposeSpec expose;
 }
